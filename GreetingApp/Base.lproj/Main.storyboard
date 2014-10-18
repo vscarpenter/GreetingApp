@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GreetingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greeting App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y48-Sq-Jie">
+                                <rect key="frame" x="224" y="28" width="153" height="33"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U4-rD-lRg">
+                                <rect key="frame" x="265" y="132" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngc-jG-uTk">
+                                <rect key="frame" x="268" y="216" width="64" height="30"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressMeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRV-SH-hUK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y48-Sq-Jie" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0D2-4F-GP4"/>
+                            <constraint firstItem="Y48-Sq-Jie" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="2c4-Hy-Cb1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7U4-rD-lRg" secondAttribute="trailing" constant="248" id="DXP-9k-dlk"/>
+                            <constraint firstItem="Y48-Sq-Jie" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="GPF-hd-l6o"/>
+                            <constraint firstItem="Ngc-jG-uTk" firstAttribute="top" secondItem="7U4-rD-lRg" secondAttribute="bottom" constant="56" id="HyN-b9-Usd"/>
+                            <constraint firstItem="Y48-Sq-Jie" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SmS-EM-LDr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ngc-jG-uTk" secondAttribute="trailing" constant="252" id="aFO-Fn-eKl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y48-Sq-Jie" secondAttribute="trailing" constant="207" id="b7V-Jo-C52"/>
+                            <constraint firstItem="Y48-Sq-Jie" firstAttribute="centerX" secondItem="7U4-rD-lRg" secondAttribute="centerX" id="ccd-tu-MJA"/>
+                            <constraint firstItem="7U4-rD-lRg" firstAttribute="top" secondItem="Y48-Sq-Jie" secondAttribute="bottom" constant="71" id="f4B-XA-mh1"/>
+                            <constraint firstItem="Y48-Sq-Jie" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="208" id="krr-Ky-BXF"/>
+                            <constraint firstItem="7U4-rD-lRg" firstAttribute="top" secondItem="Y48-Sq-Jie" secondAttribute="bottom" constant="86" id="plH-eQ-N81"/>
+                            <constraint firstItem="Ngc-jG-uTk" firstAttribute="top" secondItem="7U4-rD-lRg" secondAttribute="bottom" constant="63" id="q0F-Le-tHx"/>
+                            <constraint firstItem="7U4-rD-lRg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="249" id="r30-Lx-jXk"/>
+                            <constraint firstItem="Ngc-jG-uTk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="252" id="rCu-BG-wKn"/>
+                            <constraint firstItem="Ngc-jG-uTk" firstAttribute="centerX" secondItem="7U4-rD-lRg" secondAttribute="centerX" id="rcf-ib-d1h"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GPF-hd-l6o"/>
+                                <exclude reference="SmS-EM-LDr"/>
+                                <exclude reference="ccd-tu-MJA"/>
+                                <exclude reference="plH-eQ-N81"/>
+                                <exclude reference="HyN-b9-Usd"/>
+                                <exclude reference="rcf-ib-d1h"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="0D2-4F-GP4"/>
+                                <exclude reference="2c4-Hy-Cb1"/>
+                                <include reference="GPF-hd-l6o"/>
+                                <include reference="SmS-EM-LDr"/>
+                                <exclude reference="b7V-Jo-C52"/>
+                                <include reference="ccd-tu-MJA"/>
+                                <exclude reference="krr-Ky-BXF"/>
+                                <exclude reference="DXP-9k-dlk"/>
+                                <exclude reference="f4B-XA-mh1"/>
+                                <include reference="plH-eQ-N81"/>
+                                <exclude reference="r30-Lx-jXk"/>
+                                <include reference="HyN-b9-Usd"/>
+                                <exclude reference="aFO-Fn-eKl"/>
+                                <exclude reference="q0F-Le-tHx"/>
+                                <exclude reference="rCu-BG-wKn"/>
+                                <include reference="rcf-ib-d1h"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="7U4-rD-lRg" id="4ag-EL-DEA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940.5" y="440"/>
+        </scene>
+    </scenes>
+</document>
